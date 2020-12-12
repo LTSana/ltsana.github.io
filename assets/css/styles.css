@@ -1,0 +1,10 @@
+body {
+  background: url("../../assets/img/background/0f883e6f5db348671c1e26a7dfd2e5f3.gif?h=3b3f6a39d58acd7d806a398f5a4c0849") top / cover no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Barlow, sans-serif;
+  scroll-behavior: smooth;
+  cursor: url(../../assets/img/mouseicon/mousepointer2.png?h=5503adbd667cdf25c4dc487191cf1400) 2 2, auto;
+}
+

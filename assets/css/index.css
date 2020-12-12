@@ -1,0 +1,87 @@
+/* Hero 1 Style */
+
+#hero_1 {
+  margin: 40px;
+}
+
+#profile_picture {
+  border-style: solid;
+  border-color: rgb(32,255,255);
+}
+
+.hero_1_heading_0 {
+  background: rgba(0,0,0,0.65);
+  border-radius: 10px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+/* Hero 2 Style */
+
+.hero_2_heading_0 {
+  background: rgba(0,0,0,0.8);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.hero_2_par_0 {
+  background: rgba(0,0,0,0.8);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.hero_2_col_0 {
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+/* Hero 3 style */
+
+.hero_3_container0 {
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+}
+
+.skill-icons {
+  color: rgb(255,255,255);
+  font-size: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* Hero 4 Style */
+
+#hero_4 {
+  min-height: calc(100vh - 250px);
+}
+
+.hero_4_col_0 {
+  background: rgba(0,0,0,0.8);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.hero_4_par_0 {
+  text-decoration: none;
+}
+
+#contactme_link, #contactme_link:hover {
+  text-decoration: none;
+  color: rgb(32,255,255);
+}
+
+#contactme_btn {
+  /*background: rgb(33,255,255);*/
+  /*color: rgb(0,0,0);*/
+  /*clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0 75%, 0 0);*/
+}
+
