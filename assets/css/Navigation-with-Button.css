@@ -262,7 +262,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav_link_btn_span {
     width: 100%;
   }
@@ -273,6 +273,13 @@
     font-family: Tomorrow, sans-serif;
     background-color: #51a4e4 !important;
     color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .close {
+    font-family: Tomorrow, sans-serif;
+    color: white;
   }
 }
 
