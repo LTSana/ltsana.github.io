@@ -70,7 +70,7 @@
 /* Hero 4 Style */
 
 #hero_4 {
-  min-height: calc(100vh - 250px);
+  /*min-height: calc(100vh - 250px);*/
 }
 
 .hero_4_heading_0 {
@@ -99,5 +99,20 @@
   /*background: rgb(33,255,255);*/
   /*color: rgb(0,0,0);*/
   /*clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0 75%, 0 0);*/
+}
+
+/* Hero 5 Style */
+
+#hero_5 {
+  min-height: calc(100vh - 70px);
+}
+
+.hero_5_col_0 {
+  background: rgba(0,0,0,0.8);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  border-radius: 10px;
 }
 
