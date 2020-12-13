@@ -93,10 +93,10 @@
   text-decoration: none;
 }
 
-.hero_4_col_0 {
+.hero_4_row_0 {
   background: rgba(0,0,0,0.8);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 10px;
   margin-top: 70px;
 }
