@@ -279,7 +279,8 @@
 @media (max-width: 768px) {
   .close {
     font-family: Tomorrow, sans-serif;
-    color: white;
+    color: #ff47ff;
+    text-shadow: 0 1px 0 rgba(255,71,255,0.5);
   }
 }
 
