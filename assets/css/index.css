@@ -96,15 +96,15 @@
   text-decoration: none;
 }
 
-#contactme_link, #contactme_link:hover {
-  text-decoration: none;
-  color: rgb(32,255,255);
-}
-
 #contactme_btn {
   /*background: rgb(33,255,255);*/
   /*color: rgb(0,0,0);*/
   /*clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0 75%, 0 0);*/
+}
+
+#contactme_link, #contactme_link:hover {
+  text-decoration: none;
+  color: rgb(32,255,255);
 }
 
 /* Hero 5 Style */
