@@ -109,6 +109,11 @@
 
 /* Hero 5 Style */
 
+.hero_5_heading_0 {
+  font-family: Tomorrow, sans-serif;
+  letter-spacing: 0px;
+}
+
 .hero_5_col_0 {
   background: rgba(0,0,0,0.8);
   padding-top: 15px;
