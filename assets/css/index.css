@@ -84,6 +84,15 @@
   letter-spacing: 0px;
 }
 
+.hero_4_heading_1 {
+  margin-top: 10px;
+}
+
+.hero_4_links, .hero_4_links:hover {
+  color: #21ffff;
+  text-decoration: none;
+}
+
 .hero_4_col_0 {
   background: rgba(0,0,0,0.8);
   padding-top: 10px;
@@ -94,6 +103,7 @@
 
 .hero_4_par_0 {
   text-decoration: none;
+  margin-bottom: 0px;
 }
 
 #contactme_btn {
