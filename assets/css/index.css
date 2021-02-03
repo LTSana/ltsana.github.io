@@ -192,3 +192,13 @@
   color: #ff4e42;
 }
 
+.hero-6-par-score-guide {
+  background: rgba(0,0,0,0.5);
+  border-radius: 9px;
+}
+
+.hero-6-par-score-guide > span {
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
