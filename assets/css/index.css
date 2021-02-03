@@ -171,3 +171,24 @@
   padding-bottom: 5px;
 }
 
+.pagespeed-heading {
+  color: rgb(255,255,255);
+  font-weight: bold;
+}
+
+.score-holder {
+  font-family: Tomorrow, sans-serif;
+}
+
+.score-good {
+  color: #00d266;
+}
+
+.score-medium {
+  color: #ffa400;
+}
+
+.score-low {
+  color: #ff4e42;
+}
+
