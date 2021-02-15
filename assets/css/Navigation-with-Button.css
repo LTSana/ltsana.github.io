@@ -205,7 +205,7 @@
 }
 
 .navigation-clean-button .navbar-text .action-button:hover {
-  background: orange;
+  background: rgb(0,243,239);
   color: black;
 }
 
