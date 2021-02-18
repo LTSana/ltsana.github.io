@@ -108,9 +108,24 @@
   margin-top: 10px;
 }
 
-.hero_4_links, .hero_4_links:hover {
+.hero_4_links {
   color: #21ffff;
   text-decoration: none;
+  margin-right: 10px;
+}
+
+.hero_4_links:hover {
+  color: #21ffff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.hero_4_source_code {
+  color: #05ff00;
+}
+
+.hero_4_source_code:hover {
+  color: #50ff4d;
 }
 
 .hero_4_row_0 {
