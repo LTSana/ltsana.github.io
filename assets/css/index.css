@@ -208,6 +208,10 @@
   color: #ff4e42;
 }
 
+.score-error {
+  color: #ff0000;
+}
+
 .hero-6-par-score-guide {
   background: rgba(0,0,0,0.5);
   border-radius: 9px;
