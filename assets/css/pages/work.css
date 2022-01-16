@@ -1,0 +1,85 @@
+/* Hero 6 */
+
+.hero-6-container {
+  background: rgba(0,0,0,0.9);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+
+.hero-6-row-workholder {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-top-style: none;
+  border-bottom-width: 1.4px;
+  border-bottom-style: solid;
+  padding-bottom: 5px;
+}
+
+.pagespeed-heading {
+  color: rgb(255,255,255);
+  font-weight: bold;
+}
+
+.score-holder {
+  font-family: Tomorrow, sans-serif;
+}
+
+.score-good {
+  color: #00d266;
+}
+
+.score-medium {
+  color: #ffa400;
+}
+
+.score-low {
+  color: #ff4e42;
+}
+
+.score-error {
+  color: #ff0000;
+}
+
+.hero-6-par-score-guide {
+  background: rgba(0,0,0,0.5);
+  border-radius: 9px;
+}
+
+.hero-6-par-score-guide > span {
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+.beta_flag {
+  border-radius: 9px;
+  margin-left: 10px;
+  font-size: 25px;
+  color: rgb(255,255,255);
+  font-weight: bold;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+  border-style: solid;
+  border-color: rgb(33,255,255);
+}
+
+.demo_flag {
+  border-style: solid;
+  border-color: rgb(255,153,0);
+  border-radius: 9px;
+  margin-left: 10px;
+  font-size: 25px;
+  color: rgb(255,255,255);
+  font-weight: bold;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+}
+

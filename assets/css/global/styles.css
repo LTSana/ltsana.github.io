@@ -1,0 +1,40 @@
+body {
+  font-family: Barlow, sans-serif;
+  cursor: url(../../../assets/img/mouseicon/mousepointer2.png?h=5503adbd667cdf25c4dc487191cf1400) 2 2, auto;
+  background: url("../../../assets/img/background/41-410604_city-sunset-4k-3440-x-1440-anime.png?h=c5416968fe02792632011474af3afa86") center / cover no-repeat fixed;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  color: black;
+  background-color: rgb(32,255,255);
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main Div */
+
+@media (min-width: 768px) {
+  #main-div {
+    min-height: 100vh;
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  #main-div {
+    min-height: 100vh;
+    margin-top: 75px;
+  }
+}
+

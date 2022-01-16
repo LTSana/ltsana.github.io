@@ -1,0 +1,160 @@
+/* Hero 1 Style */
+
+#hero_1 {
+  margin: 40px;
+  margin-top: 80px;
+}
+
+#profile_picture {
+  border-style: solid;
+  border-color: rgb(32,255,255);
+}
+
+.hero_1_heading_0 {
+  background: rgb(0,0,0);
+  border-radius: 10px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  animation-name: hero_1_heading_0_ani;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes hero_1_heading_0_ani {
+  0% {
+    box-shadow: 5px 5px;
+  }
+  20% {
+    box-shadow: 2px 2px;
+  }
+  50% {
+    box-shadow: 3px 3px;
+  }
+  80% {
+    box-shadow: 2px 2px;
+  }
+  100% {
+    box-shadow: 5px 5px;
+  }
+}
+
+/* Hero 2 Style */
+
+.hero_2_heading_0 {
+  background: rgba(0,0,0,0.9);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.hero_2_par_0 {
+  background: rgba(0,0,0,0.9);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.hero_2_col_0 {
+  background: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  padding-top: 10px;
+  backdrop-filter: blur(5px);
+}
+
+/* Hero 3 style */
+
+.hero_3_heading_0 {
+  font-family: Tomorrow, sans-serif;
+  font-style: normal;
+  letter-spacing: -1px;
+}
+
+.hero_3_container0 {
+  background: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.skill-icons {
+  color: rgb(255,255,255);
+  font-size: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* Hero 4 Style */
+
+.hero_4_heading_0 {
+  font-family: Tomorrow, sans-serif;
+  letter-spacing: 0px;
+}
+
+.hero_4_heading_1 {
+  margin-top: 10px;
+}
+
+.hero_4_links {
+  color: #21ffff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.hero_4_links:hover {
+  color: #21ffff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.hero_4_source_code {
+  color: #05ff00;
+}
+
+.hero_4_source_code:hover {
+  color: #50ff4d;
+}
+
+.hero_4_row_0 {
+  background: rgba(0,0,0,0.9);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 70px;
+  backdrop-filter: blur(5px);
+}
+
+.hero_4_par_0 {
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+#contactme_link, #contactme_link:hover {
+  text-decoration: none;
+  color: rgb(32,255,255);
+}
+
+/* Hero 5 Style */
+
+.hero_5_heading_0 {
+  font-family: Tomorrow, sans-serif;
+  letter-spacing: 0px;
+}
+
+.hero_5_row_0 {
+  background: rgba(0,0,0,0.9);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
