@@ -1,85 +1,66 @@
-/* Hero 6 */
-
-.hero-6-container {
-  background: rgba(0,0,0,0.9);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 10px;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  color: white;
-  backdrop-filter: blur(5px);
+#hero-1 {
+  min-height: 100vh;
 }
 
-.hero-6-row-workholder {
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border-top-style: none;
-  border-bottom-width: 1.4px;
-  border-bottom-style: solid;
-  padding-bottom: 5px;
+.work-option {
+  cursor: pointer;
 }
 
-.pagespeed-heading {
-  color: rgb(255,255,255);
-  font-weight: bold;
+@keyframes spinnyOption {
+  0% {
+    font-family: Barriecito, serif;
+  }
+  10% {
+    font-family: 'Aguafina Script', serif;
+  }
+  20% {
+    font-family: Aldrich, sans-serif;
+  }
+  30% {
+    font-family: 'Alfa Slab One', serif;
+  }
+  40% {
+    font-family: 'Alumni Sans', sans-serif;
+  }
+  50% {
+    font-family: 'Annie Use Your Telescope', serif;
+  }
+  60% {
+    font-family: 'Are You Serious', serif;
+  }
+  70% {
+    font-family: 'Beth Ellen', serif;
+  }
+  80% {
+    font-family: Arbutus, serif;
+  }
+  90% {
+    font-family: Bangers, serif;
+  }
+  100% {
+    font-family: Bonbon, serif;
+  }
 }
 
-.score-holder {
-  font-family: Tomorrow, sans-serif;
+.work-option.active, .work-option:hover {
+  color: var(--bs-red);
 }
 
-.score-good {
-  color: #00d266;
+@media (min-width: 576px) {
+  .work-option:hover > span {
+    animation-name: spinnyOption;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
 }
 
-.score-medium {
-  color: #ffa400;
+.work-option.active > span {
+  color: var(--bs-white);
 }
 
-.score-low {
-  color: #ff4e42;
-}
-
-.score-error {
-  color: #ff0000;
-}
-
-.hero-6-par-score-guide {
-  background: rgba(0,0,0,0.5);
-  border-radius: 9px;
-}
-
-.hero-6-par-score-guide > span {
-  margin-left: 2.5px;
-  margin-right: 2.5px;
-}
-
-.beta_flag {
-  border-radius: 9px;
-  margin-left: 10px;
-  font-size: 25px;
-  color: rgb(255,255,255);
-  font-weight: bold;
-  padding-top: 0px;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-bottom: 3px;
-  border-style: solid;
-  border-color: rgb(33,255,255);
-}
-
-.demo_flag {
-  border-style: solid;
-  border-color: rgb(255,153,0);
-  border-radius: 9px;
-  margin-left: 10px;
-  font-size: 25px;
-  color: rgb(255,255,255);
-  font-weight: bold;
-  padding-top: 0px;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-bottom: 3px;
+@media (max-width: 575px) {
+  .work-option {
+    margin-right: 5px;
+  }
 }
 
