@@ -1,0 +1,21 @@
+img {
+  object-fit: cover;
+  object-position: top;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
+.skill-icons {
+  font-size: 70px;
+  margin: 0;
+}
+
+.card {
+  border: 2px solid #272b30 ;
+}
+
