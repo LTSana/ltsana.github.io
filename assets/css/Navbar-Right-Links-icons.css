@@ -68,12 +68,10 @@
 .nav-item > .nav-link {
   border-style: none;
   color: var(--bs-body-color);
-  font-family: Codystar, serif;
 }
 
 .nav-item > .nav-link.active {
   border-style: none;
   color: var(--bs-tertiary-bg);
-  font-family: Codystar, serif;
 }
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sana Mngadi</title>
+    <meta name="description" content="Hi there, my name is Sana Mngadi.
+I'm a self-taught software engineer building web applications and data mining tools.
+I started my journey coding in C and moved on to Python where I strive now building Django back-ends and automated tools to improve my workflow.">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/favicons/android-chrome-512x512.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Codystar&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-icons.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md border-0 py-0">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler border-0" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/work.html">Work &amp; Expericies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="fullscreen-div">
+        <section class="py-5">
+            <div class="container">
+                <div class="row d-flex flex-column justify-content-start align-items-center">
+                    <div class="col-12 col-xxl-8">
+                        <h1 class="third-font">EUL Student App</h1>
+                    </div>
+                    <div class="col-xxl-8">
+                        <h1 data-bss-disabled-mobile="true" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="250" data-aos-once="true" id="time-info-greeting"></h1>
+                        <h3 class="text-info mb-0">How I improved students academic life at EUL</h3>
+                        <p>09-05-2024</p>
+                        <p class="mb-5">The European University of Lefke. Know as the beating heart of lefke, where I started studying in 2020.&nbsp;<br><span style="color: rgb(0, 188, 226); background-color: rgba(94, 153, 170, 0);">#EUL</span> uses a lot of online platforms for students and the most used are OIBS and Moodle.<br>OIBS is a very old website for keeping students data.<br><br>The data we can find on OIBS is weekly schedule, curriculum, transcript, scores, advisor info and announcements.<br>OIBS has a very old UI and a complicated login process for non techy users, where you need to open two tabs, one for initializing the session and another to render the login page. After login in the user is requested to choose a role/program (Computer Science, Software Engineering, etc) and when a role is chosen there is no noticeable difference as the information displayed on the whole website is the same for all roles.</p>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2">Problems</span></h5>
+                        <p class="mb-5">I felt frustrated by the amount of clicks I had to do to reach something simple like my weekly schedule.<br>The stress of constantly opening two tabs to login and the annoyance of short session times would kill me.<br><br>So I started making a list of issues the website had and how I could solve them.<br>1. Old UI/UX (Totally not responsive).<br>2. Two tabs for login in... must be a old framework.<br>3. Very short session times.<br>4. Too many clicks to see my weekly schedule.<br>5. No offline capabilities like PWAs or Mobile Apps.<br>6. Curriculum page was actually okay, just... I wanted to make it my way at this point.<br>7. The forgot password functionality is broken most of the time, so best to never forget your password.</p>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2">Recon</span></h5>
+                        <p class="mb-5">Well... now that I have all my issues listed I can start searching online to find any topics talking about OIBS and if there are any API endpoints I could take advantage of, but I already had my doubts because of it's old UI that I would find any type of rest API.<br>I didn't get any results on Google or DuckDuckGo so I decided to use the network traffic to see where requests are being sent and how OIBS responds. A lot of the requests that are supposed to return 401 or 400 would always return 200, I found this to be annoying as it makes checking responses hard if there was a problem.<br><br>I also noticed that the session expiry had no information and expired when the tabs are closed.<br>I also found out that the reason of requiring to recreate a new tab is that the first tab was to get the session value.<br><br>Meanwhile on insomnia...</p>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2 main-font">Endpoint testing</span></h5>
+                        <p class="mb-5">Assuming the developers that worked on OIBS are Turkish the endpoints have some very strange names, so I would just make a list of endpoints from the networking traffic from the recon and label them as what I thought each endpoint was for.<br>Each step of authentication and navigating to the weekly schedule, curriculum, etc...<br><br>All endpoints returned a HTML file that I would parse using python to then extract the information.<br><br>While extracting the information for must endpoints, the hardest was extracting the weekly schedule as the HTML for the schedule was a grid and there are no identifiers to know what day of the week it is and what time of the day it is. So in order to make sure I don't waste to much time on it, checked if I can extract position information like "how many pixels from the top and from the left" and that actually worked and I was able to determine day of the week using the pixels from the left - right and time using the pixels from the top - down.</p>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2 main-font">Choosing a framework</span></h5>
+                        <p class="mb-0">One of the hardest decisions was to choose the right framework to build on.<br>I went with frameworks I already knew how to build on as my options.</p>
+                        <ul>
+                            <li><a href="https://www.djangoproject.com/" target="_blank">Django</a> - Python (Back-end)</li>
+                            <li><a href="https://www.djangoproject.com/" target="_blank">Django</a> - Python (Back-end)</li>
+                            <li><a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank">Flask</a> - Python (Back-end)</li>
+                            <li><a href="https://getbootstrap.com/docs/5.0/examples/" target="_blank">Bootstrap</a> - HTML (Front-end)</li>
+                            <li><a href="https://developer.android.com/develop/ui/compose" target="_blank">JetPack Compose</a> - Kotlin (I learned later in this experience)</li>
+                            <li><a href="https://expo.dev/" target="_blank">React Native Expo</a> - JavaScript&nbsp;(I learned later in this experience)</li>
+                        </ul>
+                        <p class="mb-5">Because I had used <strong>Django</strong> a lot recently, I first choose to build it using <strong>Django</strong> and <strong>Bootstrap</strong>.<br>I got a free tier server on <a href="https://www.heroku.com/" target="_blank">Heroku</a>&nbsp;when it was free (Now you got to pay $5) with their fixed domains, I did not want to spend a lot of money on renting a server and getting a custom domain name so I went with what was free and reliable.</p>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2 main-font">Issues with my first framework</span></h5>
+                        <p class="mb-5">Due to <a href="https://www.heroku.com/" target="_blank">Heroku</a>&nbsp;changing their free tier to a paid their I could no longer continue using their servers and I made a request to my University to support my application and put it on a server on campus and use their official domain names, but I was denied.<br>Since <strong>Django </strong>is a framework designed to run on servers and not on user devices. I was stuck in a loop trying to find another free tier server provider with a static domain name, but most of the free tier servers only provided a dynamic domain name and did not include Cron job services.<br><br>I debated on buying a <a href="https://www.raspberrypi.com/" target="_blank">Rasberry Pi</a> to host myself, but I could not easily get one and their prices were way... passed my budget.</p>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2 main-font">The holy grail solution</span></h5>
+                        <p class="mb-2">While on holiday in Portugal I couldn't resist the urge to find a solution to this problem.<br>I research <strong>Kotlin </strong>and how to build mobile application using it, I spent one month building a prototype that worked kinda well... but had a lot of issues like UI/UX theme switching issues and at the time multi-platform compatibility was not stable and well documented on their website and youtube.<br><br>That's when I reached out to someone I met at University that had used <strong>React Native Expo</strong> and they told me that multi-platform is very good and that the experience using <strong>RNE </strong>is very good and the community is very big.<br><br>I spent the first month of 2024 learning and practicing building mobile application that include technics that I would eventually include in my new Student App for mobile.</p>
+                        <ul>
+                            <li>Expo Router.</li>
+                            <li>Database management for offline.</li>
+                            <li>Authentication methods.</li>
+                            <li>Notifications and how to handle them.</li>
+                            <li>Background Tasks.</li>
+                            <li>Multi-language handling.</li>
+                            <li>Over-The-Air updates. *This is so useful.</li>
+                        </ul>
+                        <p class="mb-5">I mainly focused on only building functions and features I knew users would like to use immediately like seeing their schedule and receiving notifications about their classes and later I started adding other features like a bus schedule and a reminder maker for setting reminders for their upcoming exams or events they do not want to miss on campus.</p>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2 main-font">Publishing to Google Play Store</span></h5>
+                        <p class="mb-5">At the time I wanted to publish the "EUL Student" application Google had changed their Google Play requirements for apps to be published.<br>Requiring developers to first have 20 testers for 2 weeks constantly using the application, I was worried about this as I did not know 20 people that are willing to use an application that has not been officially advertised by the University, but I was determined to pass this requirement so I messaged the friends that I already knew were willing to use the application and I asked some people in some of our University's WhatsApp groups to if they would like to use the application and after getting 15 people using the application I was surprised that a lot of people started asking me for access to the application and the community of the application started growing very fast and I was able to pass Google's requirements to publish the application.<br><br>Currently on Google I have achieved 4.8 star rating and 100+ downloads.<br><br><a href="https://play.google.com/store/apps/details?id=com.sana.eulstudent" target="_blank">Download Here</a>&nbsp;<i class="fab fa-google-play"></i></p>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2 main-font">The Apple Issue</span></h5>
+                        <p class="mb-5">I made a poll on WhatsApp in most of the universities groups to figure out how many users use iOS and Android.<br>60% were iOS users and 40% were Android... very big difference in my opinion.<br><br>Publishing on Google Play was very easy and was a smooth experience. Google Play only requires a one-time payment of $25 US dollars for a developer account and you can publish as many apps as you want.<br><br>While Apple has a more strict experience from what I have heard from youtuber and requires a $100 US dollar annually payment and you need to pay first before attempting to publish an app, this makes me very worried of trying due to the fact that I cannot afford $100 US dollar fee annually and to pay and have the application rejected is a big fear.</p>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2 main-font">What I learnt</span></h5>
+                        <p class="mb-2">While building the "EUL Student" app I learnt a lot from SEO to data collecting and even interacting with users to insure their bad experiences can be improved.<br>Down bellow is a list of what I learnt.</p>
+                        <ul class="mb-5">
+                            <li>Building applications using React Native Expo</li>
+                            <li>Using cronjobs on servers.</li>
+                            <li>Data collecting using Python and JavaScript to scrap html.</li>
+                            <li>Database migrating on mobile devices.</li>
+                            <li>Background Tasks managing on mobile devices.</li>
+                            <li>How to publish on Google Play.</li>
+                            <li>How to collect feedback from users and to fix them.</li>
+                            <li>Notification handling and local triggering.</li>
+                        </ul>
+                        <h5 class="text-info mb-2"><em>#</em><span class="fs-6 fw-semibold text-light ms-2 main-font">EUL please use the app</span></h5>
+                        <p class="mb-2">I hope one day the university recognizes the impact the application has on students and how it helps so many students with their academic life and supports the application.<br><br>I constantly get positive feedback while walking on campus from students thanking me for creating the application and how it helps them on their day to day.<br><br>Thank you to everyone using the application and I hope you all have a positive experience!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+</body>
+
+</html>
